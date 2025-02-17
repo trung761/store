@@ -44,9 +44,9 @@
       <div class="header-top-inner">
           <div class="cnt-account">
             <ul class="list-unstyled">
-                              <li><a href="http://store_flip.test:8080/sign_in"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
-                <li><a href="http://store_flip.test:8080/sign_up"><i class="fa fa-user-plus"></i> Đăng ký</a></li>
-                              <li><a href="http://store_flip.test:8080/giohang_sp"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                              <li><a href="store/sign_in"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
+                <li><a href="store/sign_up"><i class="fa fa-user-plus"></i> Đăng ký</a></li>
+                              <li><a href="store/giohang_sp"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
             </ul>
           </div>
       </div>
@@ -70,23 +70,23 @@
                                     <li><a style='cursor: pointer;'>Nữ</a>
                       <ul class="dropdown">
                                                                                                 
-                          <li><a href="http://store_flip.test:8080/loai_sp/1/1">Áo thun</a></li>
+                          <li><a href="store/loai_sp/1/1">Áo thun</a></li>
                                                                                                     
-                          <li><a href="http://store_flip.test:8080/loai_sp/2/1">Áo sơ mi</a></li>
+                          <li><a href="store/loai_sp/2/1">Áo sơ mi</a></li>
                                                                           </ul>
                   </li>
                                    
                                     <li><a style='cursor: pointer;'>Nam</a>
                       <ul class="dropdown">
                                                                                                 
-                          <li><a href="http://store_flip.test:8080/loai_sp/1/2">Áo thun</a></li>
+                          <li><a href="store/loai_sp/1/2">Áo thun</a></li>
                                                                           </ul>
                   </li>
                                    
                                     <li><a style='cursor: pointer;'>Bé gái</a>
                       <ul class="dropdown">
                                                                                                 
-                          <li><a href="http://store_flip.test:8080/loai_sp/4/3">Quần jeans</a></li>
+                          <li><a href="store/loai_sp/4/3">Quần jeans</a></li>
                                                                           </ul>
                   </li>
                                    
@@ -99,7 +99,7 @@
           </div>
           <div class="col-lg-5 col-md-4">  
             <div class="search-area">
-              <form role="search" method="get" action="http://store_flip.test:8080/search%7D">
+              <form role="search" method="get" action="store/search%7D">
                   <a class="search-button" style=cursor:pointer;></a>
                   <input type = "text" class="search-field" name="key" placeholder="Tìm kiếm...">
               </form>
@@ -138,7 +138,7 @@
               var searchField = document.querySelector('.search-field');
               if (searchField && searchField.value.trim() !== '') {
                   var searchValue = encodeURIComponent(searchField.value.trim());
-                  window.location.href = "http://store_flip.test:8080/search%7D?key=" + searchValue;
+                  window.location.href = "store/search%7D?key=" + searchValue;
               }
           });
       }
@@ -217,11 +217,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/1"><img src="src/assets\images\products\ao1.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/1"><img src="src/assets\images\products\ao1.jpg" alt=""></a> </div>
                       <div class="tag sale"><span>sale</span></div>
                     </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/1">Áo thun</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/1">Áo thun</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -229,7 +229,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/1" method="POST">
+                      <form action="store/add-to-cart/1" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -242,11 +242,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/2"><img src="src/assets\images\products\ao.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/2"><img src="src/assets\images\products\ao.jpg" alt=""></a> </div>
                       <div class="tag sale"><span>sale</span></div>
                     </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/2">Áo thun Raplan trơn</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/2">Áo thun Raplan trơn</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -254,7 +254,7 @@
                         <span class="price-before-discount">400,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/2" method="POST">
+                      <form action="store/add-to-cart/2" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -273,11 +273,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/6"><img src="src/assets\images\products\ao2.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/6"><img src="src/assets\images\products\ao2.jpg" alt=""></a> </div>
                       <div class="tag sale"><span>sale</span></div>
                     </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/6">Áo Thun Slimfit Nữ Thêu</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/6">Áo Thun Slimfit Nữ Thêu</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -285,7 +285,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/6" method="POST">
+                      <form action="store/add-to-cart/6" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -298,11 +298,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/7"><img src="src/assets\images\products\ao3.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/7"><img src="src/assets\images\products\ao3.jpg" alt=""></a> </div>
                       <div class="tag sale"><span>sale</span></div>
                     </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/7">Áo Thun Slimfit Nữ Thêu Gấu</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/7">Áo Thun Slimfit Nữ Thêu Gấu</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -310,7 +310,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/7" method="POST">
+                      <form action="store/add-to-cart/7" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -365,11 +365,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/1"><img src="src/assets\images\products\ao1.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/1"><img src="src/assets\images\products\ao1.jpg" alt=""></a> </div>
                                             <div class="tag sale"><span>SALE</span></div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/1">Áo thun</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/1">Áo thun</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -377,7 +377,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/1" method="POST">
+                      <form action="store/add-to-cart/1" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -391,11 +391,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/2"><img src="src/assets\images\products\ao.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/2"><img src="src/assets\images\products\ao.jpg" alt=""></a> </div>
                                             <div class="tag sale"><span>SALE</span></div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/2">Áo thun Raplan trơn</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/2">Áo thun Raplan trơn</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -403,7 +403,7 @@
                         <span class="price-before-discount">400,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/2" method="POST">
+                      <form action="store/add-to-cart/2" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -417,17 +417,17 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/3"><img src="src/assets\images\products\somi.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/3"><img src="src/assets\images\products\somi.jpg" alt=""></a> </div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/3">Áo sơ mi</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/3">Áo sơ mi</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
                                                 <span class="price">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/3" method="POST">
+                      <form action="store/add-to-cart/3" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -447,11 +447,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/6"><img src="src/assets\images\products\ao2.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/6"><img src="src/assets\images\products\ao2.jpg" alt=""></a> </div>
                                             <div class="tag sale"><span>SALE</span></div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/6">Áo Thun Slimfit Nữ Thêu</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/6">Áo Thun Slimfit Nữ Thêu</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -459,7 +459,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/6" method="POST">
+                      <form action="store/add-to-cart/6" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -473,11 +473,11 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/7"><img src="src/assets\images\products\ao3.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/7"><img src="src/assets\images\products\ao3.jpg" alt=""></a> </div>
                                             <div class="tag sale"><span>SALE</span></div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/7">Áo Thun Slimfit Nữ Thêu Gấu</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/7">Áo Thun Slimfit Nữ Thêu Gấu</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
@@ -485,7 +485,7 @@
                         <span class="price-before-discount">500,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/7" method="POST">
+                      <form action="store/add-to-cart/7" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
@@ -502,17 +502,17 @@
                                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="http://store_flip.test:8080/chitiet_sp/9"><img src="src/assets\images\products\quan.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="store/chitiet_sp/9"><img src="src/assets\images\products\quan.jpg" alt=""></a> </div>
                                           </div>
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="http://store_flip.test:8080/chitiet_sp/9">Quần jean bé gái đi học ống suông rộng Luna nơ chéo</a></h3>
+                      <h3 class="name"><a href="store/chitiet_sp/9">Quần jean bé gái đi học ống suông rộng Luna nơ chéo</a></h3>
                       
                       <div class="description"></div>
                       <div class="product-price">
                                                 <span class="price">600,000đ</span>
                                               </div>
                       
-                      <form action="http://store_flip.test:8080/add-to-cart/9" method="POST">
+                      <form action="store/add-to-cart/9" method="POST">
                         <input type="hidden" name="_token" value="KU7wIPGqpPHE7Ek6xVqIIRZEXIQob3tNmVmoD1dk" autocomplete="off">                        <button type="submit" class="btn btn-primary icon">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
