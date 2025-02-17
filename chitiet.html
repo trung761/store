@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="MediaCenter, Template, eCommerce">
+  <meta name="robots" content="all">
+  <title>FM</title>
+  
+
+
+   <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="/store/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css">
+   <!-- Customizable CSS -->
+   <link rel="stylesheet" href="/store/css/main.css">
+   <link rel="stylesheet" href="/store/css/blue.css">
+   <link rel="stylesheet" href="/store/css/owl.carousel.css">
+   <link rel="stylesheet" href="/store/css/owl.transitions.css">
+   <link rel="stylesheet" href="/store/css/animate.min.css">
+   <link rel="stylesheet" href="/store/css/rateit.css">
+   <link rel="stylesheet" href="/store/css/bootstrap-select.min.css">
+   <!-- Icons/Glyphs -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 
+   <!-- Fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="cnt-home">
+  <header class="header-style-1">
+
+  
+  <div class="top-bar animate-dropdown">
+    <div class="container">
+
+      <div class="header-top-inner">
+          <div class="cnt-account">
+            <ul class="list-unstyled">
+                              <li><a href="/store/sign_in"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
+                <li><a href="/store/sign_up"><i class="fa fa-user-plus"></i> Đăng ký</a></li>
+                              <li><a href="/store/giohang_sp"><i class="icon fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-1 logo-holder">
+          <div class="logo"> <a href="index"> <img src="/store/src/assets/images/logo.png" alt="logo"> </a> </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-9 top-search-holder">
+          <div class="col-lg-7 col-md-8">  
+            <nav class="header__menu mobile-menu">
+              <ul>
+                 
+                                    <li><a style='cursor: pointer;'>Nữ</a>
+                      <ul class="dropdown">
+                                                                                                
+                          <li><a href="/store/loai_sp/1/1">Áo thun</a></li>
+                                                                                                    
+                          <li><a href="/store/loai_sp/2/1">Áo sơ mi</a></li>
+                                                                          </ul>
+                  </li>
+                                   
+                                    <li><a style='cursor: pointer;'>Nam</a>
+                      <ul class="dropdown">
+                                                                                                
+                          <li><a href="/store/loai_sp/1/2">Áo thun</a></li>
+                                                                          </ul>
+                  </li>
+                                   
+                                    <li><a style='cursor: pointer;'>Bé gái</a>
+                      <ul class="dropdown">
+                                                                                                
+                          <li><a href="/store/loai_sp/4/3">Quần jeans</a></li>
+                                                                          </ul>
+                  </li>
+                                   
+                                    <li><a style='cursor: pointer;'>Bé trai</a>
+                      <ul class="dropdown">
+                                                                      </ul>
+                  </li>
+                                                </ul>
+            </nav>
+          </div>
+          <div class="col-lg-5 col-md-4">  
+            <div class="search-area">
+              <form role="search" method="get" action="/store/search%7D">
+                  <a class="search-button" style=cursor:pointer;></a>
+                  <input type = "text" class="search-field" name="key" placeholder="Tìm kiếm...">
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
+          <div class="dropdown dropdown-cart"> 
+            <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+              <div class="items-cart-inner">
+                <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
+                  <div class="basket-item-count">
+                    <span class="count">
+                       0
+                                          </span>
+                  </div>
+                <div class="total-price-basket"> <span class="lbl">Giỏ hàng</span> </div>
+              </div>
+            </a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var searchButton = document.querySelector('.search-button');
+      if (searchButton) {
+          searchButton.addEventListener('click', function(event) {
+              event.preventDefault();
+              var searchField = document.querySelector('.search-field');
+              if (searchField && searchField.value.trim() !== '') {
+                  var searchValue = encodeURIComponent(searchField.value.trim());
+                  window.location.href = "/store/search%7D?key=" + searchValue;
+              }
+          });
+      }
+  });
+</script>
+
+  <div class="body-content outer-top-xs" id="top-banner-and-menu">
+    <div class="container">
+      
+<div class='row single-product'>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <ul class="list-inline list-unstyled">
+                    <li><a href="/store/index">Trang chủ</a></li>
+                    <li style="cursor:pointer;">Nữ</li>
+                    <li style="cursor:pointer;">Áo thun</li>
+                    <li style="cursor:pointer;">Áo thun</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-block">
+        <div class="row  wow fadeInUp">
+            <div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
+                <div class="product-item-holder size-big single-product-gallery small-gallery">
+                    <div id="owl-single-product">
+                        <div class="single-product-gallery-item" id="slide1">
+                            <a data-lightbox="image-1" data-title="Gallery" href="/store/src/assets/images/products/ao1.jpg">
+                                <img class="img-responsive" alt="" src="/store/src/assets/images/ao1.jpg" data-echo="/store/src/assets/images/products/ao1.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    
+
+                </div>
+            </div>
+
+            <div class='col-sm-6 col-md-7 product-info-block'>
+                <div class="product-info">
+                    <h1 class="name">Áo thun</h1>
+
+                    
+                    <div class="stock-container info-container m-t-10">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="stock-box">
+                                    <span class="label">VẬN CHUYỂN :</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="stock-box">
+                                    <span class="value">Miễn phí vận chuyển cho đơn hàng từ 2.000.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="price-container info-container m-t-20">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="price-box">
+                                                                        <span class="price">450,000đ</span>
+                                    <span class="price-strike">500,000đ</span>
+                                                                    </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                            </div> 
+                        </div>
+                    </div>
+                    
+
+                    <div class="quantity-container info-container" style="border-bottom: 1px solid #F2F2F2;">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <span class="label">Số lượng :</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="quantity">
+                                    <div class="cart-number">
+                                        <input type="number" id="product-quantity-1" value="1" min="1" name="quantity">
+                                        <div class="cart-number-plus cart-number-quantity">+</div>
+                                        <div class="cart-number-minus cart-number-quantity">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ABC" style='display:flex; margin-top:2em;'>
+                        <div class="col-sm-8">
+                                                        <form action="/store/add-to-cart/1" method="POST">
+                                <input type="hidden" name="_token" value="cWDB6C63KLyTPxQtfyJ87nxO7i2fhs2zA2OLN6pJ" autocomplete="off">                                <input type="hidden" name="quantity" id="hidden-quantity-1" value="1">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-shopping-cart inner-right-vs"></i> THÊM VÀO GIỎ
+                                </button>
+                            </form>
+                                                    </div>
+                        <div class="col-sm-4">
+                            <a href="/store/thanhtoan_sp" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> THANH TOÁN</a>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="product-content-right-btn-content-big">
+                    <div class="product-content-right-btn-content-title">
+                        <div class="product-content-right-btn-content-title-item chitiet">
+                            <p>CHI TIẾT SẢN PHẨM</p>
+                        </div>
+                        <div class="product-content-right-btn-content-title-item baoquan">
+                            <p>BẢO QUẢN</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-btn-content">
+                        <div class="product-content-right-btn-content-chitiet product-content-right-click ">
+                            Được lựa chọn từ chất liệu Tencel cao cấp, áo mang lại cảm giác mềm mại và dễ chịu khi diện lên. Chất liệu này cũng tạo nên độ bóng, làm nổi bật vẻ đẹp của sản phẩm.
+                        </div>
+                        <div class="product-content-right-btn-content-baoquan product-content-right-click">
+                            * Các sản phẩm thuộc dòng cao cấp (Senora) và áo khoác (dạ, tweed, lông, phao) chỉ giặt khô, tuyệt đối không giặt ướt.
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+    
+    <section class="section featured-product wow fadeInUp" style="margin-top: 2em">
+        <h3 class="section-title">Sản phẩm tương tự</h3>
+        <div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
+                        <div class="item item-carousel">
+                                <div class="products">                   
+                    <div class="product">                        
+                        <div class="product-image">
+                            <div class="image">
+                                <a href="/store/chitiet_sp/1"><img src="/store/src/assets/images/products/ao1.jpg" alt=""></a>
+                            </div>
+                                                        <div class="tag sale"><span>sale</span></div>
+                                                    </div>
+                        <div class="product-info text-left">
+                            <h3 class="name"><a href="/store/chitiet_sp/1">Áo thun</a></h3>
+                            
+                            <div class="description"></div>
+                            <div class="product-price">
+                                                                <span class="price">10đ</span>
+                                <span class="price-before-discount">500,000đ</span>
+                                                            </div>
+                        </div>
+                        <form action="/store/add-to-cart/1" method="POST">
+                            <input type="hidden" name="_token" value="cWDB6C63KLyTPxQtfyJ87nxO7i2fhs2zA2OLN6pJ" autocomplete="off">                            <button type="submit" class="btn btn-primary icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </form>
+                    </div>          
+                </div>
+                            </div>
+                        <div class="item item-carousel">
+                                <div class="products">                   
+                    <div class="product">                        
+                        <div class="product-image">
+                            <div class="image">
+                                <a href="/store/chitiet_sp/2"><img src="/store/src/assets/images/products/ao.jpg" alt=""></a>
+                            </div>
+                                                        <div class="tag sale"><span>sale</span></div>
+                                                    </div>
+                        <div class="product-info text-left">
+                            <h3 class="name"><a href="/store/chitiet_sp/2">Áo thun Raplan trơn</a></h3>
+                            
+                            <div class="description"></div>
+                            <div class="product-price">
+                                                                <span class="price">50đ</span>
+                                <span class="price-before-discount">400,000đ</span>
+                                                            </div>
+                        </div>
+                        <form action="/store/add-to-cart/2" method="POST">
+                            <input type="hidden" name="_token" value="cWDB6C63KLyTPxQtfyJ87nxO7i2fhs2zA2OLN6pJ" autocomplete="off">                            <button type="submit" class="btn btn-primary icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </form>
+                    </div>          
+                </div>
+                            </div>
+                        <div class="item item-carousel">
+                            </div>
+                        <div class="item item-carousel">
+                            </div>
+                        <div class="item item-carousel">
+                                <div class="products">                   
+                    <div class="product">                        
+                        <div class="product-image">
+                            <div class="image">
+                                <a href="/store/chitiet_sp/6"><img src="/store/src/assets/images/products/ao2.jpg" alt=""></a>
+                            </div>
+                                                        <div class="tag sale"><span>sale</span></div>
+                                                    </div>
+                        <div class="product-info text-left">
+                            <h3 class="name"><a href="/store/chitiet_sp/6">Áo Thun Slimfit Nữ Thêu</a></h3>
+                            
+                            <div class="description"></div>
+                            <div class="product-price">
+                                                                <span class="price">15đ</span>
+                                <span class="price-before-discount">500,000đ</span>
+                                                            </div>
+                        </div>
+                        <form action="/store/add-to-cart/6" method="POST">
+                            <input type="hidden" name="_token" value="cWDB6C63KLyTPxQtfyJ87nxO7i2fhs2zA2OLN6pJ" autocomplete="off">                            <button type="submit" class="btn btn-primary icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </form>
+                    </div>          
+                </div>
+                            </div>
+                        <div class="item item-carousel">
+                                <div class="products">                   
+                    <div class="product">                        
+                        <div class="product-image">
+                            <div class="image">
+                                <a href="/store/chitiet_sp/7"><img src="/store/src/assets/images/products/ao3.jpg" alt=""></a>
+                            </div>
+                                                        <div class="tag sale"><span>sale</span></div>
+                                                    </div>
+                        <div class="product-info text-left">
+                            <h3 class="name"><a href="/store/chitiet_sp/7">Áo Thun Slimfit Nữ Thêu Gấu</a></h3>
+                            
+                            <div class="description"></div>
+                            <div class="product-price">
+                                                                <span class="price">15đ</span>
+                                <span class="price-before-discount">500,000đ</span>
+                                                            </div>
+                        </div>
+                        <form action="/store/add-to-cart/7" method="POST">
+                            <input type="hidden" name="_token" value="cWDB6C63KLyTPxQtfyJ87nxO7i2fhs2zA2OLN6pJ" autocomplete="off">                            <button type="submit" class="btn btn-primary icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </form>
+                    </div>          
+                </div>
+                            </div>
+                        <div class="item item-carousel">
+                            </div>
+                    </div>
+    </section>
+</div>
+    </div>
+  </div>
+  <footer id="footer" class="footer color-bg">
+   <div class="footer-bottom">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-3">
+           <div class="module-heading">
+             <h4 class="module-title">LIÊN HỆ CHÚNG TÔI</h4>
+           </div>
+           <!-- /.module-heading -->
+
+           <div class="module-body">
+             <ul class="toggle-footer" style="">
+               <li class="media">
+                 <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span> </div>
+                 <div class="media-body">
+                   <p>213, Nguyễn Văn Cừ, An Hòa, Ninh Kiều, Cần Thơ</p>
+                 </div>
+               </li>
+               <li class="media">
+                 <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </div>
+                 <div class="media-body">
+                   <p>+(888) 123-4567<br>
+                     +(888) 456-7890</p>
+                 </div>
+               </li>
+               <li class="media">
+                 <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span> </div>
+                 <div class="media-body"> <span><a href="#">flipmart@themesground.com</a></span> </div>
+               </li>
+             </ul>
+           </div>
+           <!-- /.module-body -->
+         </div>
+         <!-- /.col -->
+
+         <div class="col-xs-12 col-sm-6 col-md-3">
+           <div class="module-heading">
+             <h4 class="module-title">Dịch vụ khách hàng</h4>
+           </div>
+           <!-- /.module-heading -->
+
+           <div class="module-body">
+             <ul class='list-unstyled'>
+               <li class="first"><a href="#" title="Account">Tài khoản của tôi</a></li>
+               <li><a href="#" title="Order History">Lịch sử đơn hàng</a></li>
+               <li><a href="#" title="FAQ">Câu hỏi thường gặp</a></li>
+               <li><a href="#" title="Promotion">Khuyến mãi</a></li>
+               <li class="last"><a href="#" title="Help Center">Trung tâm trợ giúp</a></li>
+             </ul>
+           </div>
+           <!-- /.module-body -->
+         </div>
+         <!-- /.col -->
+
+         <div class="col-xs-12 col-sm-6 col-md-3">
+           <div class="module-heading">
+             <h4 class="module-title">VỀ CHÚNG TÔI</h4>
+           </div>
+           <!-- /.module-heading -->
+
+           <div class="module-body">
+             <ul class='list-unstyled'>
+               <li><a title="Service" href="#">Dịch vụ</a></li>
+               <li><a title="Company" href="#">Công ty</a></li>
+               <li><a title="Addresses" href="Investment Relations">Quan hệ đầu tư</a></li>
+             </ul>
+           </div>
+         </div>
+
+         <div class="col-xs-12 col-sm-6 col-md-3">
+           <div class="module-heading">
+             <h4 class="module-title">TẠI SAO CHỌN CHÚNG TÔI</h4>
+           </div>
+
+           <div class="module-body">
+             <ul class='list-unstyled'>
+               <li class="first"><a href="#" title="Shopping Guide">Hướng dẫn mua sắm</a></li>
+               <li><a href="#" title="News">Tin tức</a></li>
+             </ul>
+           </div>
+           <!-- /.module-body -->
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="copyright-bar">
+     <div class="container">
+       <div class="col-xs-12 col-sm-6 no-padding social">
+         <ul class="link">
+           <li class="fb pull-left"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
+           <li class="tw pull-left"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
+           <li class="googleplus pull-left"><a target="_blank" rel="nofollow" href="#" title="GooglePlus"></a></li>
+           <li class="rss pull-left"><a target="_blank" rel="nofollow" href="#" title="RSS"></a></li>
+           <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="PInterest"></a></li>
+           <li class="linkedin pull-left"><a target="_blank" rel="nofollow" href="#" title="Linkedin"></a></li>
+           <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+         </ul>
+       </div>
+       <div class="col-xs-12 col-sm-6 no-padding">
+         <div class="clearfix payment-methods">
+            <ul>
+                <li><img src="/store/src/assets/images/payments/1.png" alt=""></li>
+                <li><img src="/store/src/assets/images/payments/2.png" alt=""></li>
+                <li><img src="/store/src/assets/images/payments/3.png" alt=""></li>
+                <li><img src="/store/src/assets/images/payments/4.png" alt=""></li>
+                <li><img src="/store/src/assets/images/payments/5.png" alt=""></li>
+              </ul>
+         </div>
+         <!-- /.payment-methods -->
+       </div>
+     </div>
+   </div>
+ </footer>
+
+
+
+
+
+
+  <!-- JavaScripts placed at the end of the document so the pages load faster -->
+  <script src="/store/src/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="/store/src/assets/js/bootstrap.min.js"></script>
+  <script src="/store/src/assets/js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="/store/src/assets/js/owl.carousel.min.js"></script>
+  <script src="/store/src/assets/js/echo.min.js"></script>
+  <script src="/store/src/assets/js/jquery.easing-1.3.min.js"></script>
+  <script src="/store/src/assets/js/bootstrap-slider.min.js"></script>
+  <script src="/store/src/assets/js/jquery.rateit.min.js"></script>
+  <script type="text/javascript" src="/store/src/assets/js/lightbox.min.js"></script>
+  <script src="/store/src/assets/js/bootstrap-select.min.js"></script>
+  <script src="/store/src/assets/js/wow.min.js"></script>
+  <script src="/store/src/assets/js/scripts.js"></script>
+</body>
+
+</html>
